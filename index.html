@@ -11,26 +11,30 @@
       padding: 2em;
       line-height: 1.6;
     }
-.container {
-  display: flex;
-  margin-bottom: 2em;
-}
 
-.profile-pic {
-  height: 180px;
-  margin-right: 30px;
-  border-radius: 8px;
-}
+    .intro-flex {
+      display: flex;
+      align-items: center; /* vertical centering */
+      margin-bottom: 2em;
+    }
 
-.text-content {
-  width: calc(100% - 210px); /* leave space for image + margin */
-  text-align: justify;
-}
+    .profile-pic {
+      height: 180px;
+      margin-right: 30px;
+      border-radius: 8px;
+      flex-shrink: 0;
+    }
+
+    .text-content {
+      flex: 1;
+      text-align: justify;
+    }
 
     a {
       text-decoration: none;
       color: #007acc;
     }
+
     .contact {
       margin-bottom: 1em;
     }
@@ -38,7 +42,8 @@
 </head>
 <body>
 
-<div class="container">
+<!-- Profile image and text block (centered) -->
+<div class="intro-flex">
   <img src="berkeley_seal.png" alt="UC Berkeley Seal" class="profile-pic">
 
   <div class="text-content">
@@ -46,16 +51,21 @@
 
     <div class="contact">
       Email: dingzhe_leng@berkeley.edu<br>
+      <a href="https://scholar.google.com/">Google Scholar</a> ·
+      <a href="https://github.com/dingzhe-leng">GitHub</a> ·
+      <a href="CV.pdf">CV</a> ·
+      <a href="https://www.linkedin.com/in/dingzhe-leng/">LinkedIn</a>
     </div>
 
     <p>
       I am a PhD student in Quantitative Marketing at the Haas School of Business, UC Berkeley.
-      Prior to joining Haas, I worked as a pre-doctoral research assistant in the Strategy Department at the Kellogg School of Management, Northwestern University.
+      Prior to joining Haas, I worked as a full-time pre-doctoral research assistant in the Strategy Department at the Kellogg School of Management, Northwestern University.
       I hold a bachelor's degree in Economics from the Shanghai University of Finance and Economics.
     </p>
   </div>
 </div>
 
+<!-- Research section -->
 <h2>Research</h2>
 <ul>
   <li>
@@ -64,13 +74,13 @@
         Causal Inference with Endogenous Price Response
       </a>
     </strong><br>
-    <em>    with <a href="https://jeziorski.me/" target="_blank">Przemyslaw Jeziorski</a> and 
-      <a href="https://www.seilerstephan.com/" target="_blank">Stephan Seiler</a>
-</em>
+    <em>
+      with 
+      <a href="https://faculty.haas.berkeley.edu/jeziorski/" target="_blank">Przemyslaw Jeziorski</a> and 
+      <a href="https://www.gsb.stanford.edu/faculty-research/faculty/stephan-seiler" target="_blank">Stephan Seiler</a>
+    </em>
   </li>
 </ul>
 
 </body>
 </html>
-
-
